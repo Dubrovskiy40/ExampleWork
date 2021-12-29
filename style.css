@@ -1,0 +1,204 @@
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: border-box;
+   list-style-type: none;
+}
+
+.container {
+   max-width: 1140px;
+   margin: 0 auto;
+}
+.hidden {
+   display: none;
+}
+.uppercase {
+   text-transform: uppercase;
+}
+#loader {
+   color: red;
+   margin-top: 20px;
+   font-size: 24px;
+   font-weight: bold;
+}
+.header {
+   padding-top: 60px;
+   text-align: center;
+}
+.header__title {
+   text-align: center;
+   margin-top: 30px;
+   margin-bottom: 50px;
+}
+.header__btn {
+   padding: 15px 20px;
+   background-color: #fff;
+   border: 1px solid #000;
+   border-radius: 10px;
+}
+.currency-wrap {
+   display: flex;
+   flex-direction: column;
+}
+.wrap {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   display: flex;
+   justify-content: space-around;
+}
+.currency {
+   display: flex;
+   flex-direction: column;
+}
+.currency__title {
+   padding: 20px 0;
+   text-align: center;
+}
+.currency__img {
+   max-width: 200px;
+}
+.currency__exchange {
+   padding: 15px 0;
+}
+.form {
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+}
+.form__select {
+   margin: 10px 0;
+   padding: 10px 15px;
+   background-color: #fff;
+   border: 1px solid #000;
+   border-radius: 10px;
+}
+.form__btn {
+   padding: 10px 15px;
+   background-color: #fff;
+   border: 1px solid #000;
+   border-radius: 10px;
+}
+.form__btn:hover {
+   cursor: pointer;
+   background-color: #000;
+   color: #fff;
+}
+.form__inp {
+   padding: 10px 15px;
+   border: 1px solid #000;
+   border-radius: 10px;
+}
+.currency__total {
+   margin: 15px 0;
+   text-align: center;
+}
+
+
+.big-img {
+   width: 500px;
+   text-align: center;
+}
+.images__subtitle {
+   margin: 10px auto;
+   text-align: center;
+}
+.images-block {
+   text-align: center;
+}
+.active-img {
+   border: 5px ridge yellow;
+}
+
+
+/* модальное окно */
+#wrapper-modal {
+   width: 100%;
+   height: 100%;
+   display: none;
+}
+
+#wrapper-modal.active {
+   display: block;
+}
+
+#overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   background-color: gray;
+   opacity: 0.8;
+}
+
+#modal-window {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   width: 400px;
+   height: 400px;
+   z-index: 2;
+   border: 1px solid black;
+   border-radius: 25px;
+   background-image: url(img/404.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.btn-close {
+   padding: 15px;
+   border-radius: 50%;
+}
+.btn-close:hover {
+   background-color: red;
+   font-weight: bold;
+}
+
+/* shop */
+.shop-wrap {
+
+} 
+.shop__cart {
+
+}
+.shop__goods {
+   margin: 30px 0;
+}
+.cards {
+   display: grid;
+   gap: 20px;
+   grid-template-columns: repeat(auto-fit, 300px);
+}
+.card {
+   background: #fff;
+   margin-bottom: 20px;
+   border: 2px solid grey;
+   border-radius: 5%;
+}
+.card__img {
+    width: 100%;
+   border-radius: inherit;
+}
+.card__content {
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+   padding: 10px;
+}
+.card__title {
+
+}
+.card__text {
+   padding: 10px 0 15px;
+}
+.card__price {
+
+}
+.card__btn {
+   border: 1px solid #000;
+   color: #fff;
+   padding: 10px 15px;
+   background: rgba(58, 56, 56, 0.43);
+}
